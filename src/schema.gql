@@ -1,0 +1,21 @@
+type Query {
+    helloDominiCode: String!
+    listUsers(status: Status): [User]
+    listCourses: [Course]
+}
+
+type Course {
+    name: String!
+    students: [User]!
+}
+
+type User {
+    name: String!
+    email: String!
+    status: Status!
+}
+
+enum Status {
+    PASSED
+    FAILED
+}
