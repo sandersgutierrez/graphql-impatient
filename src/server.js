@@ -6,6 +6,7 @@ const { ApolloServer, gql } = require('apollo-server')
 
 const schema = fs.readFileSync(join(__dirname, 'schema.gql'), 'utf8')
 const typeDefs = gql(schema)
+const port = process.env.PORT || 3000
 
 const users = [
     {
@@ -48,6 +49,7 @@ const server = new ApolloServer({
     typeDefs,
     resolvers,
     playground: true,
+    introspection: true,
 })
 
-server.listen(3030).then(() => console.log(`Server listening`))
+server.listen(port).then(() => console.log(`Server listening`))
