@@ -5,7 +5,7 @@
     "main": "src/index.js",
     "scripts": {
         "start": "node src/index.js",
-        "start:dev": "nodemon"
+        "dev": "nodemon"
     },
     "author": "Sanders Gutierrez <ing.sanders@gmail.com> (https://sandersgutierrez.github.io)",
     "license": "MIT",
