@@ -10,9 +10,9 @@
     "author": "Sanders Gutierrez <ing.sanders@gmail.com> (https://sandersgutierrez.github.io)",
     "license": "MIT",
     "dependencies": {
-        "apollo-server": "^2.18.1"
+        "apollo-server": "3.10.2"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "nodemon": "2.0.19"
     }
 }
